@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-size: 1.2rem;
+}
+
+body{
+    background-color: rgb(247, 248, 249);
+}
+nav{
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    background-color: beige;
+}
+
+nav a{
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0 0.8rem;
+}
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 300ms ease;
+    border-radius: 40%;
+}
+
+#mobile{
+    width: 100vw;
+    height: 4rem;
+    justify-content: right;
+    align-items : center;
+    background-color: beige;
+    display: none;
+}
+
+#mobile div{
+    display: none;
+}
+
+@media only screen and (max-width: 1020px) {
+
+    nav{
+       display: none; 
+    }
+    #mobile{
+        display: flex;
+    }  
+    #mobile img{
+        margin-right: 1rem;
+    }
+    #mobile img:hover + div{
+        display: block;
+        https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors
+    }
+
+
+}
